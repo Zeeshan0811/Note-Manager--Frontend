@@ -8,7 +8,7 @@ const index = ({ note }) => {
                 <div className="card text-center">
                     <h5 className="card-header">{note.title}</h5>
                     <p className="card-text p-3">{note.description}</p>
-                    <div class="card-footer text-muted">
+                    <div className="card-footer text-muted">
                         <Link href="/">Go back</Link>
                     </div>
                 </div>
