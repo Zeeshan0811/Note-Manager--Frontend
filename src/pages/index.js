@@ -4,13 +4,11 @@ import AddNote from '../components/AddNote'
 
 export const AppContext = createContext();
 
-
 export default function Home() {
   const [notes, setNotes] = useState(null);
   const [searhkey, setSearhkey] = useState('');
   const [refresh, setRefresh] = useState(false);
   const [isLoading, setLoading] = useState(false);
-  const [currentOption, setCurrentOption] = useState('add_new');
 
   const handleSearchKey = (e) => {
     setSearhkey(e.target.value);
@@ -28,16 +26,12 @@ export default function Home() {
       })
   }, [refresh])
 
-  // if (isLoading) return <p>Loading...</p>
-  // if (!notes) return <p>Opps! No data Found...</p>
 
   return (
     <AppContext.Provider value={{ refresh, setRefresh }} >
       <div className="row mt-3 justify-content-center">
         <div className="col-md-4">
-          {
-            (currentOption == 'update') ? <UpdateNote /> : <AddNote />
-          }
+          <AddNote />
         </div>
         <div className="col-md-8">
           <h2 className='text-center mb-3'>Note List</h2>

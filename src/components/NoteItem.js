@@ -31,7 +31,7 @@ const NoteItem = ({ note }) => {
                     <h5>{note.title}</h5>
                 </Link>
                 <div className="d-flex">
-                    <Link href={`/note/${note.id}`} className='btn btn-primary btn-sm mr-2 text-white'>
+                    <Link href={`/note/${note.id}/update`} className='btn btn-primary btn-sm mr-2 text-white'>
                         <i className="fa fa-pencil-square-o"></i>
                     </Link>
                     <Link href={`/note/${note.id}`} className='btn btn-danger btn-sm text-white' onClick={e => handleDelete(e, note.id, refresh, setRefresh)}>
