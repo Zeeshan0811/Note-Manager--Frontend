@@ -83,7 +83,7 @@ const Add = () => {
                     <div className="form-group">
                         <label htmlFor="note_title">Title</label>
                         <input type="text" name="title" onChange={e => handleChange(e)} value={note.title} className={(error.titleError) ? 'form-control is-invalid' : 'form-control'} id="note_title" placeholder="Enter title" />
-                        {(error.titleError) ? <div className="invalid-feedback"> Title can't be empty</div> : null}
+                        {(error.titleError) ? <div className="invalid-feedback"> Title can not be empty</div> : null}
                     </div>
                     <div className="form-group">
                         <label htmlFor="note_description">Description</label>

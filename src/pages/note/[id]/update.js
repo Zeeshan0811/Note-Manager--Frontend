@@ -12,7 +12,7 @@ const slug_options = {
     locale: 'en', // language code of the locale to use
 };
 
-const update = ({ data }) => {
+const Update = ({ data }) => {
     const router = useRouter();
     const [id, setId] = useState(data.id);
     const [note, setNote] = useState({
@@ -82,7 +82,7 @@ const update = ({ data }) => {
                             <div className="form-group">
                                 <label htmlFor="note_title">Title</label>
                                 <input type="text" name="title" onChange={e => handleChange(e)} value={note.title} className={(error.titleError) ? 'form-control is-invalid' : 'form-control'} id="note_title" placeholder="Enter title" />
-                                {(error.titleError) ? <div className="invalid-feedback"> Title can't be empty</div> : null}
+                                {(error.titleError) ? <div className="invalid-feedback"> Title can not be empty</div> : null}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="note_description">Description</label>
@@ -98,7 +98,7 @@ const update = ({ data }) => {
     )
 }
 
-export default update
+export default Update
 
 export const getServerSideProps = async (context) => {
     const api_url = process.env.API_URL + 'notes/' + context.params.id;

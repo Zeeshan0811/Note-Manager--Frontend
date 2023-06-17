@@ -3,7 +3,7 @@ import Link from 'next/link'
 import axios from 'axios'
 import { useRouter } from 'next/router';
 
-const index = ({ note }) => {
+const Index = ({ note }) => {
     const router = useRouter();
     const handleDelete = async (e, note_id) => {
         e.preventDefault();
@@ -49,7 +49,7 @@ const index = ({ note }) => {
     )
 }
 
-export default index
+export default Index
 
 export const getServerSideProps = async (context) => {
     const api_url = process.env.API_URL + 'notes/' + context.params.id;
