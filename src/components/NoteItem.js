@@ -41,7 +41,7 @@ const NoteItem = ({ note }) => {
             </div>
 
             <p className="card-text p-3">
-                {note.description?.substring(0, 50)}
+                {note.description?.substring(0, 250)}
                 <br />
                 <Link href={`/note/${note.id}`} className="float-right"> Read more...</Link>
             </p>
