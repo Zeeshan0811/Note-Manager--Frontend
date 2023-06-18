@@ -1,8 +1,6 @@
 ## Note Manager 
----
 ![Screencast](https://renttouch.com/webable/note_manager.PNG)
 ## Features
----
 Note Manger is a basic note creating app which has CRUD operations. CRUD stands for Create, Read, Update and Delete, and these are the essential functions of every application.
 
 - Create/add a new note to note manager app
@@ -13,7 +11,6 @@ Note Manger is a basic note creating app which has CRUD operations. CRUD stands 
 
 
 ## API
----
 |           | EndPoint               | Description            |
 | --------- | ---------------------  | ---------------------- |
 | List      | GET /api/notes         |  Get all the notes     |     
@@ -28,7 +25,6 @@ https://demo1.renttouch.com/
 
 
 ## Installation
----
 1. First, clone/download the repository and navigate to root directory.
 2. Run command npm install or yarn install
     ```bash
