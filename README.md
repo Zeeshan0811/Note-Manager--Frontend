@@ -18,6 +18,7 @@ Note Manger is a basic note creating app which has CRUD operations. CRUD stands 
 | Add       | POST /api/notes        |  Create one note       |
 | Edit      | PUT /api/notes/[id]    |  Update one note       |
 | Delete    | DELETE/api/notes/[id]  |  Delete one note       |
+
 API BASE URL
 ```sh
 https://demo1.renttouch.com/
